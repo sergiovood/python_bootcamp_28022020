@@ -14,7 +14,7 @@ W katalogu projektu piszemy:
 ##branch - jest galaz, fork, 
 
 master - najwaznieszja galaz, domyslna golaz - 
-devel - tworzymy dodatkowa kalaz, gdzie tworzymy nowa galaz 
+devel - tworzymy dodatkowa galaz, gdzie tworzymy nowa galaz 
 
 git branch #spwdza w jakim jestescie branchu
 git checkout -
