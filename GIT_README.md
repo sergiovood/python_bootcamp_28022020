@@ -11,6 +11,11 @@ W katalogu projektu piszemy:
 
 	git init
 
+## czy jest gdzies podloczony zewnetrzny repozytorim
+
+git remoute
+
+
 ##branch - jest galaz, fork, 
 
 master - najwaznieszja galaz, domyslna golaz - 

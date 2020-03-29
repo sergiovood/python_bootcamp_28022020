@@ -1,4 +1,3 @@
-
 # Mnożenie
 print()
 print("Mnożenie: 2 * 3 =", 2 * 3)
@@ -21,17 +20,17 @@ print("Pierwiastek?: 8 ** 0.5 =", 8 ** 0.5)
 print()
 print("przykład liczby zespolonej: 1j + 4 + 2j - 3 =", 1j + 4 + 2j - 3)
 
-#TYPY LICZBOWE
-#liczby calkowite - int
+# TYPY LICZBOWE
+# liczby calkowite - int
 print(int())
 
-#liczby zmienne - float
+# liczby zmienne - float
 print(float())
 
-#liczby zespolone - complex
+# liczby zespolone - complex
 print(complex())
 
-#Operatory porownania
+# Operatory porownania
 """
 >, <, >=, <=, ==, != 
 
@@ -44,18 +43,18 @@ print(1 <= 3)
 print(1 == 3)
 print(1 != 3)
 
-print("="*40)
+print("=" * 40)
 
-print(1 + True) # True to jakby 1
-print(1 + False) # False to 0
+print(1 + True)  # True to jakby 1
+print(1 + False)  # False to 0
 
 print(1 == True)
 print(0 == False)
 
-print(1 is True) #czy 1 jest true?
+# print(1 is True) #czy 1 jest true
 
 print(id(1))
 print(id(True))
 
-print(type(1)) #funkcja type() zwraca nazwe typu, jesli nie wiemy 
-print(type(True)) #zwroci typ bool
+print(type(1))  # funkcja type() zwraca nazwe typu, jesli nie wiemy
+print(type(True))  # zwroci typ bool
