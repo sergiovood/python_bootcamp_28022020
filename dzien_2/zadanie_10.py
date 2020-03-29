@@ -4,12 +4,12 @@ c = input("Podaj rodzaj operacji +, -, /, *: ")
 
 
 if c == "+":
-    print(a+b)
+    print(f"""a+b""")
 elif c == "-":
     print(a-b)
-elif c == "/":
+elif c == "/" and b != 0:
     print(a/b)
 elif c == "*":
     print(a*b)
 else:
-    print("Nieprawidłowa operacja")
+    print("Nieprawidłowa operacja lub niemożna dzielić przez 0")
