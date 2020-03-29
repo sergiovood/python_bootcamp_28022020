@@ -4,7 +4,7 @@ c = input("Podaj rodzaj operacji +, -, /, *: ")
 
 
 if c == "+":
-    print(f"""a+b""")
+    print(a+b)
 elif c == "-":
     print(a-b)
 elif c == "/" and b != 0:
