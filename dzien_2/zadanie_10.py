@@ -12,4 +12,4 @@ elif c == "/" and b != 0:
 elif c == "*":
     print(a*b)
 else:
-    print("Nieprawidłowa operacja lub niemożna dzielić przez 0")
+    print("Nieprawidłowa operacja lub nie można dzielić przez 0")
