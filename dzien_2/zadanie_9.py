@@ -1,11 +1,11 @@
 import datetime
-current_year = datetime.datetime.now()
+current_year = datetime.datetime.now().year
 
 
 
 user_year = int(input("Podaj rok urodzenia: "))
 
-x = 2020 - user_year
+x = current_year - user_year
 if x >= 18:
     print("Jesteś pewnoletni")
 else:
