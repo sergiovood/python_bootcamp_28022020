@@ -32,10 +32,10 @@ by utworzyc commit, musimy
 	git status
 	
 1. dodac pliki kotre chcemy miec w commicie
-	git add sciezka do pliku
+	a. git add sciezka do pliku
 	
-	mozna dodac wszystkie pliki
-	git add. 
+	b. mozna dodac wszystkie pliki
+	git add . 
 	
 	a na koniec commit
 	
@@ -43,3 +43,7 @@ by utworzyc commit, musimy
 	
 	Git message dodanie krotkiego messegu, komentarza zeby rozumiec wracajac kiedys do poprzednich etapow
 	git commit -m "Prosta zmian"
+	
+##Wyslac na gitta
+	
+	git push
