@@ -1,24 +1,25 @@
 x_user = int(input("Podaj pozycję gracza X: "))
 y_user = int(input("Podaj pozycję gracza Y: "))
 
+poz = "Pozycja gracza:"
 
 if x_user > 100 or y_user > 100:
     print("Pozycja gracza poza planszą. Podaj wartości w przedziale od 1 do 100")
 elif x_user <= 10 and y_user <= 10:
-    print("LD")
+    print(poz, "Lewy dolny róg")
 elif x_user <= 10 and y_user >= 90:
-    print("LG")
+    print(poz, "Lewy górny róg")
 elif x_user < 10 and y_user > 10 and y_user < 90:
-    print("LK")
+    print(poz, "Lewa krawędź")
 elif x_user > 10 and x_user < 90 and y_user < 10:
-    print("DK")
+    print(poz, "Dolna krawędź")
 elif x_user >= 90 and y_user <= 10:
-    print("PD")
+    print(poz, "Prawy dolny róg")
 elif x_user > 90 and y_user > 10 and y_user < 90:
-    print("PK")
+    print(poz, "Prawa krawędź")
 elif x_user >= 90 and y_user >= 90:
-    print("PG")
+    print(poz, "Prawy górny róg")
 elif x_user > 10 and x_user < 90 and y_user > 90:
-    print("GK")
+    print(poz, "Górna krawędź")
 else:
-    print("Centrum")
+    print(poz, "Centrum")
