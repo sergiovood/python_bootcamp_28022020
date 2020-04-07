@@ -1,5 +1,5 @@
 #krotka, tupla
-#jest to typ niemotowalny
+#jest to typ niemutowalny - nie można edytować jak w przypadku listy
 
 x = (1, 2, 3, 10, 12, "ala", "mmm", 2.0)
 #    0  1  2   3   4    5       6   7    kolejnosc lementow
