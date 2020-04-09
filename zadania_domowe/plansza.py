@@ -15,13 +15,13 @@ while t == "t":
         print(pos, "w prawym górnym rogu")
     elif x_user >= 90 and y_user <= 10:
         print(pos, "w prawy dolnym rogu")
-    elif x_user < 10 and y_user > 10 and y_user < 90:
+    elif x_user < 10:
         print(pos, "na lewej krawędzi")
-    elif x_user > 10 and x_user < 90 and y_user < 10:
+    elif y_user < 10:
         print(pos, "na dolnej krawędzi")
-    elif x_user > 90 and y_user > 10 and y_user < 90:
-        print(pos, "na prawa krawędzi")
-    elif x_user > 10 and x_user < 90 and y_user > 90:
+    elif x_user > 90:
+        print(pos, "na prawej krawędzi")
+    elif y_user > 90:
         print(pos, "w górnej krawędzi")
     else:
         print(pos, "w centrum")
