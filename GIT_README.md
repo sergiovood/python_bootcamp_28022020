@@ -1,49 +1,104 @@
-#Podstawy korzystania z GIT
+# Podstawy korzystania z GIT
+wszystkie czynosci wykonywane w cmd po kolei
 
-#konfiguracja
+- KROK 0: Tworzymy lokalny folder na komputerze gdzie beda wszystkie pliki projektu
 
-	git config --global user.name=nazwa - bedzie widac ze ten uzytkownik wykonal zmiane
-	git config --global user.email=email
-
-## tworzenie nowego repozytorium
+## Tworzenie nowego lokalnego repozytorium
 
 W katalogu projektu piszemy:
 
-	git init
+	git init - zostanie utworzone puste repozytorium w wybranym katalogu .git
 
-## czy jest gdzies podloczony zewnetrzny repozytorim
+zeby sprawdzic czy faktycznie zostal utworzony katalog trzeba wpisac w cmd - "dir /a" - pokaze ukryte katalogi
 
-git remoute
+## Konfiguracja
+tworzenie uzytkownika 
 
+	git config --global user.name=nazwa - bedzie widac jaki uzytkownik wykonal zmiane
+	git config --global user.email=email - trzeba bedzie podac email
 
-##branch - jest galaz, fork, 
+## Tworzenie pliku w którym będzie opis projektu 
+jest potrzebny dla Gitta
 
-master - najwaznieszja galaz, domyslna golaz - 
-devel - tworzymy dodatkowa galaz, gdzie tworzymy nowa galaz 
-
-git branch #spwdza w jakim jestescie branchu
-git checkout -
-
-##comit - 
+    git add Readme.md
+    
+- jest to ten plik z opisem, rozszerzeniem ".md" - czyli markdown
+(język znaczników przeznaczony do formatowania tekstu)
+- łatwo można generować pdf lub doc
+- więcej - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+     
+## commit - punk w ktorym zapisujemy stan naszego projektu
 punk przewracania projektu, np. wersja 1.0, 2.0 itd
 
 by utworzyc commit, musimy 
-0. sprawdzenie obecnego stanu
-	git status
+
+> 1.Sprawdzić obecny stan plików
+
+     git status
 	
-1. dodac pliki kotre chcemy miec w commicie
-	a. git add sciezka do pliku
+> 2.Dodac pliki kotre chcemy miec w commicie
+
+    a) git add sciezka_do_pliku
 	
-	b. mozna dodac wszystkie pliki
-	git add . 
+	b) mozna dodac wszystkie pliki odrazu
+	git add .
 	
-	a na koniec commit
+
+> 3.Na koniec commit z wiadomoscia o zmianie:
+
+    git commit -m "Nazwa zmiany w pliku np. wersja_2.0"
 	
-	git commit
-	
-	Git message dodanie krotkiego messegu, komentarza zeby rozumiec wracajac kiedys do poprzednich etapow
-	git commit -m "Prosta zmian"
-	
-##Wyslac na gitta
-	
-	git push
+
+## Podlaczamy zewnetrzny repo na GitHub z lokalnym
+
+- najpierw wchodzimy na github.com i tworzymy nowy repozytorium "+"
+- kopiujemy link z github do repo i dodajemy do kodu nizej
+    
+    
+    git remote add origin link_do_repozytorium 
+    
+## Wysyłamy lokalne pliki do repozetorium na GitHub
+    
+    git push origin master 
+    lub
+    git push - jesli mamy tylko jeden glowny brach
+    
+Ma wyskoczyć okienko gdzie mamy wpisac login i haslo do GitHub.
+- Następnie odswiezamy repo na GitHub i zobaczy nasze pliki projektu
+
+#Dodatkowo 
+
+Sprawdzamy czy jesteśmy podłączeni i do jakiego branczu:
+
+    git remote
+    git remote -v - wyświetli caly link gdzie 
+                    znajduje sie projekt
+
+- powinno wyświetlić nazwe branchu np. "origin"
+
+##branch - galaz
+
+- master - najwaznieszja, domyslna golaz;
+ 
+- devel - tworzymy dodatkowa galaz dla testowania kodu przed wdrozeniem w glowna galaz master;
+
+- fitcher - tworzymy np. galaz na poprawki
+    
+    
+    git branch - sprawdza w jakim jestescie branchu, galenzi
+    git checkout -b nzawa_brancha - utworzyc nowy brach
+
+## Ignorowanie niechcących plików w projekcie
+Czasami mamy duzo plikow w projekcie i dla lepszej czytelnosci 
+musimy zignorowac niektore pliki, foldery, zeby zostalo to nad czym pracujemy.
+Dlatego tworzymy plik
+
+    .gitignore
+    
+W pliku podajemy nazwy folderów oraz plików które niechcemy widzieć w projekcie np. w pycharm.
+Prykładowo:
+    
+    .idea
+    .DS_Store
+    *.pyc - wszystkie pliki z roszerzeniem .pyc
+    __pycache__ - cash pythona
