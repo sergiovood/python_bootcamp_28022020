@@ -66,7 +66,7 @@ by utworzyc commit, musimy
 Ma wyskoczyć okienko gdzie mamy wpisac login i haslo do GitHub.
 - Następnie odswiezamy repo na GitHub i zobaczy nasze pliki projektu
 
-#Dodatkowo 
+# Dodatkowo 
 
 Sprawdzamy czy jesteśmy podłączeni i do jakiego branczu:
 
@@ -76,7 +76,7 @@ Sprawdzamy czy jesteśmy podłączeni i do jakiego branczu:
 
 - powinno wyświetlić nazwe branchu np. "origin"
 
-##branch - galaz
+## branch - galaz
 
 - master - najwaznieszja, domyslna golaz;
  
