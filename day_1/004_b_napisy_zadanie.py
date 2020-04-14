@@ -7,13 +7,17 @@ professional = input("Podaj zawód")
 
 b_year = int(b_year)
 age = curr_year - b_year
+if age >= 65:
+    age = "tak"
+else:
+    age = "nie"
 
 result = f"""
 imie i nazwisko: {first_name.capitalize()} {last_name.capitalize()}
 =============================
 rok urodzenia:      {b_year}
 zawód:              {professional.lower()}
-emerytura możliwa? : 
+emerytura możliwa? : {age}
 """
 
 print(result)
