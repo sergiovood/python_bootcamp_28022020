@@ -83,7 +83,10 @@ for x in "mbt":  # zmienna x idzie zapisze kazda literke osobno
 print("-"*30)
 #######################################
 #Pentla for zagniezdzona w inna pentla for
-for y in "123":
-    for x in "abc":
-        if x == "b":
-            print(x+y)
+for y in "123":  # najpierw y bedzie 1 oraz idzie nizej dla sprawdzenia drugiej pentli
+    for x in "abc":  # potem x bedzie a, idzie dalej do warunku sprawdzic, ale bedzie false,
+                     # wtedy bierze b i znow idzie do warnku, tym razem bedzie true, idzie do wyswietlania printu b1
+                     # potem wraca i spradza literke c, bedzie false, teraz to juz byl koniec pentli dlatego wraca wyzej
+                     # bierze 2 i znow idzie spradzac pokolei wszystki literki, powtórka opisu wyzej.                      
+        if x == "b":  # bedzie przebuszcal prze warunek tylko literki b
+            print(x+y)  # wynik bedzie b1, b2, b3
