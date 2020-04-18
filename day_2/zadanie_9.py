@@ -1,6 +1,7 @@
 import datetime
-current_year = datetime.datetime.now().year
-
+current_year = datetime.datetime.now().year  # datetime.datetime.now() - importuje date raze z godzina /
+                                            # wyciagamy sam rok za pomoca przedrostak .year
+print(current_year)
 
 
 user_year = int(input("Podaj rok urodzenia: "))
