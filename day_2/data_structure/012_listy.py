@@ -37,10 +37,13 @@ print(f"""
 Modyfikacja listy
 {"-"*30}
 """)
+
 #Modyfikacja listy dynamicznie
+
 while len(elementy) < 11: #sprawdza ilosc elementow dla zadanej listy
     elementy.append("xx") #dodaje kolejny element az poki nie bedzie ich 10
 print(elementy) # na 11 elemencie pentla zwroci false, a znaczy przejdzie dalej i wyswietli wszystkie elementy
+
 
 #######################################
 print(f"""
@@ -48,25 +51,33 @@ print(f"""
 Wybieranie elementów za pomoacą while
 {"-"*30}
 """)
+
 #######################################
+
 i = 0
 while i < len(elementy):
     print(elementy[i]) # w tym przykladzie i jest indeksem do wyswietlania elementow na poczatku 0 i zwieksza sie do konaca listy
     i += 1
+
 #######################################
 print(f"""
 {"-"*30}
 Wybieranie elementów za pomocą for (jest lzejsza i szybsza od while) 
 {"-"*30}
 """)
+
 #######################################
 # poniszy for ma ten sam wynik co while
-for element in elementy: # bierzemy nowa zmienna i wypisujemy tam wszystkie elementy z listy
+
+for element in elementy[::2]: # bierzemy nowa zmienna i wypisujemy tam wszystkie elementy z listy
     print(element) # potem wyprowadzamy na monitor
+
 print("-"*30)
 #######################################
+
 for x in "abc":  # zmienna x zapisze kazda literke osobno
     print(x) # wypisze literki po kolei, osobno
+
 print("-"*30)
 #######################################
 # 1.1
@@ -75,14 +86,17 @@ for x in "mbt":  # zmienna x zapisze kazda literke osobno
         continue #pominie ja i dalej bedzie wykonywac sie pentla
     print(x) # wynik: m, t
 print("-"*30)
+
 # 1.2
 for x in "mbt":  # zmienna x idzie zapisze kazda literke osobno
     if x == 'b': # to samo co powyzej
         break #tylko tutaj zakonczy sie pentla jesli literka b bedzie w zmiennej
     print(x) #wynik: m
+
 print("-"*30)
 #######################################
 #Pentla for zagniezdzona w inna pentla for
+
 for y in "123":  # najpierw y bedzie 1 oraz idzie nizej dla sprawdzenia drugiej pentli
     for x in "abc":  # potem x bedzie a, idzie dalej do warunku sprawdzic, ale bedzie false,
                      # wtedy bierze b i znow idzie do warnku, tym razem bedzie true, idzie do wyswietlania printu b1
@@ -90,3 +104,16 @@ for y in "123":  # najpierw y bedzie 1 oraz idzie nizej dla sprawdzenia drugiej 
                      # bierze 2 i znow idzie spradzac pokolei wszystki literki, powtórka opisu wyzej.                      
         if x == "b":  # bedzie przebuszcal prze warunek tylko literki b
             print(x+y)  # wynik bedzie b1, b2, b3
+
+#######################################
+
+lista = ["A", "B", "C", "D", "E"]
+
+print(lista.index("C") - lista.index("A")) #mozna policzyc w taki sposob jaki jest odstep od jednego indeksu do drugiego
+
+# pierwsze 4 elementy z listy beda wyswietlane w pentli dopoki licznik nie dojdzie do 20
+i = 0
+while i < 20:
+    index = i % 4  #jak dojdzie do 4 modulo 4 to i zostanie wyzerowane, bo wynik bedzie 0, czyli zawsze bedzie wyswietlac max 4 elementy z listy
+    print(i, lista[index])
+    i += 1
