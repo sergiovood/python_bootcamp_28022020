@@ -56,3 +56,6 @@ print(help(napis.lower))  # wyswietli info co dana metoda zrobi z naszym typem d
 print("-" * 30)
 
 
+a, b = 1, 2 #przypisania wartosci w szybkiej postaci
+c, e = "ala", "kot"
+print(a, b, c, e, type(a))
