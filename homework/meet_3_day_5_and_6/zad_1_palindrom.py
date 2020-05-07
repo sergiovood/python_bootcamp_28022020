@@ -1,6 +1,10 @@
-usr = "Do geese see Go?".replace(" ", "").replace("?", "").lower()
-if usr[:] == usr[::-1]:
-    answer = "polindrom"
-else:
-    answer = "nie polindrom"
-print(answer)
+
+def polindrom(usr_text):
+    if usr_text[:] == usr_text[::-1]:
+         return "Twój tekst to - polindrom"
+    else:
+        return "Wpisany tekst nie jest - polindromem"
+
+usr = input("Podaj tekst: ").replace(" ", "").replace("?", "").lower()
+#usr = "Do geese see God?".replace(" ", "").replace("?", "").lower()
+print(polindrom(usr))
