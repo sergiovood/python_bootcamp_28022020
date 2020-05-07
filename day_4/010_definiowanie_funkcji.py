@@ -70,12 +70,13 @@ print(zlacz_teksty(t1, "xxx", x=10))
 print("-" * 40)
 
 
-def decrement(n):
-    if n == 0:
+def decrement(n):  # dziala na zasadzie pentli, pobiera liczbe podana nizej, czyli 10
+    if n == 0:     # sprawdza czy 10 jest 0
         print(0)
         return
-    print(n)
-    decrement(n - 1)
-
+    print(n)        # PRINTUJE 10
+    decrement(n - 1) #robi operacje nad liczba, czyli zmnijesza o jeden, i teraz 9 powraca do do zmiennej - n
+    # i kolko powtarzasie dopoku nie wyjdziemy z funkcji za pomoca return jak dojdziemy do zera
+    # jesli w tym przypadku  nie bylo - return - to funkcja zapentliwa sie, ale python ma zabezpieczenie i na 985 kole skonczy i wyswietli Warning
 
 decrement(10)
