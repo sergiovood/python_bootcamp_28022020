@@ -13,7 +13,7 @@ text = "aaaa bbbb cccc"
 x = set(text)
 
 
-def wiecej_niz(text, prog):
+def wiecej_niz(text, prog):  #zmienne - text i prog - bioara sie z testu nizej
     zbior = set()
     for znak in set(text):
         if text.count(znak) > prog:
