@@ -9,3 +9,11 @@ for index_replace in range(len(collection)):
             indeks_min_wartosci = index_tail
     collection[index_replace], collection[index_min] = collection[index_min], collection[index_replace]
 print(collection)
+# 4
+zrodla = {"a": 10, "b":30}
+podana_liczba = 10
+if podana_liczba in zrodla.values():
+    value = podana_liczba
+    print(value)
+else:
+    print("nie istnieje")
