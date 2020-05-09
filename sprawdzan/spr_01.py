@@ -1,0 +1,1 @@
+# 1. Tuple (), Listy [], Slowniki dict(), Zbiory set()
