@@ -9,6 +9,7 @@ for index_replace in range(len(collection)):
             indeks_min_wartosci = index_tail
     collection[index_replace], collection[index_min] = collection[index_min], collection[index_replace]
 print(collection)
+
 # 4
 zrodla = {"a": 10, "b":30}
 podana_liczba = 10
@@ -17,3 +18,15 @@ if podana_liczba in zrodla.values():
     print(value)
 else:
     print("nie istnieje")
+
+# 5
+def foo(*args, **kwargs):
+    for pozycyjne in args:
+        return pozycyjne
+    for kluczowe in kwargs:
+        return kluczowe
+
+
+foo(10, 20, a=1, b=2, c=3)
+print(pozycyjne, kluczowe)
+
