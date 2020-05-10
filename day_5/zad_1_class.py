@@ -14,8 +14,21 @@ class Produkt:
         self.id = id
         self.cena = cena
 
-    def __str__(self):
-        return f"Produkt {self.produkt}, id: {self.id}, cena: {self.cena} PLN"
-p = Produkt("Woda",  1, 10.99)
+    def print_into(self):
+        print(f"Produkt {self.produkt}, id: {self.id}, cena: {self.cena} PLN")
 
-print(p)
+produkt = Produkt("Woda",  1, 10.99)
+produkt.print_into()
+
+# dodajemy test
+class TestProduct:
+    def test_product(self):
+        produkt = Produkt("Woda", 1, 10.99)
+        assert produkt
+        assert produkt.id == 1
+        assert produkt.produkt == "Woda"
+        assert produkt.cena == 10.99
+
+    def test_print_into(self):
+        produkt = Produkt(1, "Woda", 10.99)
+        assert produkt.print_into() == "Produkt Woda, id: 1, cena: 10.99 PLN"
