@@ -1,0 +1,12 @@
+pip install requests - pozwala na pobierania oraz wysywania danych do roznych stron w internecie. Intetfejs nawiazuje do protokolu http. Tam sa metody get()
+
+import requests
+resp = requests.get("https://alx.pl")
+resp
+resp.status_code
+
+resp.content
+
+resp = requests.get("link_do_api_json")
+
+resp.json()

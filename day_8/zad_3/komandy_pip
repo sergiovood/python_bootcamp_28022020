@@ -1,0 +1,8 @@
+
+pip - wszystkie komendy pip
+pip freeze - jakie moduly i jakie wersje
+pip freeze > requirements.txt - tworzenia pliku z wersjami modulu ktory wykorzystuje projekt
+pip install -r requirements.txt - instalacja z pliku modulow ktore potrzebne dla projektu z konkretnymi wersjami
+pip install django==  - jakie sa dostepne wersje frameworka django
+pip install django==3.0.6
+
