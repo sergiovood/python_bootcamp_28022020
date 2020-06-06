@@ -1,0 +1,9 @@
+pip install jupyter  -
+jupyter notebook
+ctrl+c - zeby zamknac
+
+wkomen
+
+
+pyenv - for Windows - pip install pyenv-win - https://github.com/pyenv-win/pyenv-win
+
