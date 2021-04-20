@@ -13,7 +13,7 @@ parso==0.7.0
 pickleshare==0.7.5
 pluggy==0.13.1
 prompt-toolkit==3.0.5
-py==1.8.1
+py==1.10.0
 Pygments==2.6.1
 pyparsing==2.4.7
 pytest==5.4.1
